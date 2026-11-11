@@ -34,18 +34,23 @@ $(function () {
     //function createPlatform(Xpos, Ypos, Width, Height, "Color")
     //function createPlatform(Xpos, Ypos, Width, Height, "Color", minX, maxX, speedX, minY, maxY, speedY)
     createPlatform(300, 700, 50, 10, "red")
-    createPlatform(400, 700, 60, 10, "black")
-    createPlatform(500, 700, 60, 10, "green")
-    createPlatform(700, 699, 60, 10, "orange")
+    createPlatform(400, 600, 60, 10, "black")
+    createPlatform(500, 500, 60, 10, "green")
+    createPlatform(700, 400, 60, 10, "orange")
+    
     // TODO 3 - Create Collectables
-
-
-
+    //createCollectable("Name", xPos, yPos, GravitNumber, BounceNumber, minX, maxX, speed)
+    //createCollectable("Name", xPos, yPos, GravitNumber, BounceNumber)
+    //createCollectable("Name", xPos, yPos)
+    createCollectable("database", 700, 300)
+    createCollectable("diamond", 200, 170, 0.5, 0.7);
+    createCollectable("grace", 100, 100, 1, 1, 100, 1300, 5)
     
     // TODO 4 - Create Cannons
-
-
-    
+    //createCannon ("top bottom left right", position, timeBetweenShots)
+    createCannon("top", 800, 1000, 5, 5, 800, 1300, 2)
+    createCannon("right", 400, 1000/10, 10, 10)
+    createCannon("left", 200, 5000)
     
     //////////////////////////////////
     // ONLY CHANGE ABOVE THIS POINT //
